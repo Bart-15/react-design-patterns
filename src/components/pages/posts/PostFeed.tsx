@@ -1,5 +1,8 @@
-const PostFeed = () => {
-  return <div>Hello world</div>;
-};
+'use client';
 
+import PostList from './PostList';
+
+const PostFeed = () => {
+  return <PostList />;
+};
 export default PostFeed;
