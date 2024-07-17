@@ -1,4 +1,4 @@
-import PostFeed from '@/components/pages/posts/PostFeed';
+import PostFeed from '@/components/pages/post';
 
 const PostPage = () => {
   return <PostFeed />;
