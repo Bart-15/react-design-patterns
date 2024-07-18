@@ -39,7 +39,7 @@ const AddUserForm = () => {
       <form
         onSubmit={handleSubmit(handleAddUser)}
         id='add-user-form'
-        className='grid gap-6 mb-6 md:grid-cols-2 px-4'
+        className='grid gap-6 mb-2 md:grid-cols-2'
       >
         <div>
           <label
@@ -84,13 +84,13 @@ const AddUserForm = () => {
           )}{' '}
         </div>
       </form>
-      <div className='px-4 flex flex-row-reverse mb-1'>
+      <div className='flex flex-row-reverse mb-1'>
         <button className='btn-primary' form='add-user-form' type='submit'>
           Add User
         </button>
       </div>
       {getValues() && (
-        <p className='px-4 font-light text-base'>
+        <p className='font-light text-base mb-6'>
           FormValues: {JSON.stringify(getValues(), null, 2)}
         </p>
       )}
